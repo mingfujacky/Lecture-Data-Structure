@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -42,7 +42,7 @@ style: |
   }
 ---
 # Chapter 8: Stack
-![bg right:50% w:90%](../Lecture-Data-Structure/restricted/stack_in_stock_management.png)
+![bg right:50% w:90%](../Lecture-Data-Structure/files/image/stack_in_stock_management.png)
 - **Stack** is a container that allows elements to be added or removed according to LIFO rule (last in, first out).
 
 # Requirements of a Stack
@@ -51,8 +51,8 @@ Stack follows LIFO rule, we design its interface with only two methods:
 - Pop() or Top(): remove the most recently added element from the stack and return it
 - We also need to keep track of the last element that was added to the stack, is called the **top** of the stack. 
 <div class="columns">
-    <img src="restricted/stack_operations.png">
-    <img src="restricted/stack_illustration.png">
+    <img src="files/image/stack_operations.png">
+    <img src="files/image/stack_illustration.png">
 </div>
 
 # Consider Three Data Structures to Implement Stack
@@ -60,15 +60,15 @@ Stack follows LIFO rule, we design its interface with only two methods:
 - A dynamic array
 - **A linked list**: use singly linked link(SLL) and insert / delete from the front are both O(1) for SLLs
 <div class="middle-grid">
-    <img src="restricted/stack_static_array.png">
-    <img src="restricted/stack_dynamic_array.png">
-    <img src="restricted/stack_linked_list.png">
+    <img src="files/image/stack_static_array.png">
+    <img src="files/image/stack_dynamic_array.png">
+    <img src="files/image/stack_linked_list.png">
 </div>
 
 # Design Stack by Singly Linked List
 <div class="columns">
-    <img src="restricted/stack_push.png">
-    <img src="restricted/stack_pop.png">
+    <img src="files/image/stack_push.png">
+    <img src="files/image/stack_pop.png">
 </div>
 
 # Implement Stack - Push
@@ -108,8 +108,8 @@ def peek(self):  # access the data, not pop it
 - Class StackArray in stack_dynamic_array.py coded by List to simulate dynamic array
 
 <div class="columns">
-    <img src="restricted/stack_profiling_1.png">
-    <img src="restricted/stack_profiling_2.png">
+    <img src="files/image/stack_profiling_1.png">
+    <img src="files/image/stack_profiling_2.png">
 </div>
 
 - Python provides an optimized, extremely efficient implementation for list. This
@@ -125,8 +125,8 @@ objects takes time.
 - In postfix notation, we use 3 2 4 * + and 3 2 + 4 * respectively
 - 
 <div class="columns">
-    <img src="restricted/stack_postfix_1.png">
-    <img src="restricted/stack_postfix_2.png">
+    <img src="files/image/stack_postfix_1.png">
+    <img src="files/image/stack_postfix_2.png">
 </div>
 
 # Recap

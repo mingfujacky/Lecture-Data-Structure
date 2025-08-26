@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -46,26 +46,26 @@ A **linked list** is made of nodes
   - The nodes are not in contiguous areas of memory
   - Need an extra piece of data to store the memory location of the next node
 <div class="columns">
-    <img src="restricted/linked_list.png">
-    <img src="restricted/linked_list_node.png">
+    <img src="files/image/linked_list.png">
+    <img src="files/image/linked_list_node.png">
 </div>
 
 #  Linked List vs Array
 - Elements of array are stored in contiguous memory 
 - Nodes of linked list are not stored contiguously. The location of each linked node must be saved.
 - A node in a linked node is a small data structure that stores a single value and a link to the next node.
-![bg right:50% w:90%](restricted/linked_list_vs_array.png)
+![bg right:50% w:90%](files/image/linked_list_vs_array.png)
 
 # Compare Linked List to Array
 - More flexibility: not need allocate space in advance and no data copying cost when add elements
 - Lack direct indexing
   - find an element in array: O(1)
   - find an element in linked list: O(n)
-![bg right:50% w:90%](restricted/linked_list_vs_array.png)
+![bg right:50% w:90%](files/image/linked_list_vs_array.png)
 
 # Singly Linked List (SLL)
 <div class="columns">
-    <img src="restricted/linked_list_singly.png">
+    <img src="files/image/linked_list_singly.png">
 </div>
 
 - Head node
@@ -77,8 +77,8 @@ A **linked list** is made of nodes
 
 # Requirements of Singly Linked List
 <div class="columns">
-    <img src="restricted/linked_list_node_implementation.png">
-    <img src="restricted/linked_list_implementation.png">
+    <img src="files/image/linked_list_node_implementation.png">
+    <img src="files/image/linked_list_implementation.png">
 </div>
 
 # Implement Node Class
@@ -124,8 +124,8 @@ print(repr(node3)); print(repr(node4))
 
 # Design Singly Linked List - Insert
 <div class="columns">
-    <img src="restricted/linked_list_insert_at_the_end.png">
-    <img src="restricted/linked_list_insert_in_front.png">
+    <img src="files/image/linked_list_insert_at_the_end.png">
+    <img src="files/image/linked_list_insert_in_front.png">
 </div>
 
 # Implement Singly Linked List - Insert
@@ -184,7 +184,7 @@ class SinglyLinkedList:
 
 # Design Singly Linked List - Search
 <div class="columns">
-    <img src="restricted/linked_list_search.png">
+    <img src="files/image/linked_list_search.png">
 </div>
 Time complexity O(n)
 
@@ -200,8 +200,8 @@ Time complexity O(n)
 ```
 # Design Singly Linked List - Delete
 <div class="columns">
-    <img src="restricted/linked_list_delete_1.png">
-    <img src="restricted/linked_list_delete_2.png">
+    <img src="files/image/linked_list_delete_1.png">
+    <img src="files/image/linked_list_delete_2.png">
 </div>
 
 - when we want to delete 7, how to do?
@@ -234,7 +234,7 @@ Test case need test empty list, delete first node, delete last node, delete midd
 
 # Sorted Linked List
 <div class="columns">
-    <img src="restricted/linked_list_sorted.png">
+    <img src="files/image/linked_list_sorted.png">
 </div>
 
 Traverse the list to find the right place to insert the new value
@@ -263,8 +263,8 @@ def insert(self, new_data):
 ```
 # Doubly Linked List (DLL)
 <div class="columns">
-    <img src="restricted/linked_list_singly_example_2.png">
-    <img src="restricted/linked_list_doubly_example.png">
+    <img src="files/image/linked_list_singly_example_2.png">
+    <img src="files/image/linked_list_doubly_example.png">
 </div>
 
 - If we have two links in a single node of the list, we can reach any other node in the list, both before and after it.
@@ -274,7 +274,7 @@ def insert(self, new_data):
 
 # Doubly Linked Node
 <div class="columns">
-    <img src="restricted/double_linked_list_node.png">
+    <img src="files/image/double_linked_list_node.png">
 </div>
 
 # Implement Doubly Linked Node
@@ -319,9 +319,9 @@ class DoublyLinkedNode:
 
 # Design Doubly Linked List - Insert
 <div class="columns">
-    <img src="restricted/double_linked_list_insert_at_front.png">
-    <img src="restricted/double_linked_list_insert_at_end.png">
-    <img src="restricted/double_linked_list_insert_in_middle.png">
+    <img src="files/image/double_linked_list_insert_at_front.png">
+    <img src="files/image/double_linked_list_insert_at_end.png">
+    <img src="files/image/double_linked_list_insert_in_middle.png">
 </div>
 
 # Implement Doubly Linked List - Insert

@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -42,7 +42,7 @@ style: |
   }
 ---
 # Chapter 10: Priority Queues and Heaps
-![bg right:50% w:90%](../Lecture-Data-Structure/restricted/priority_queue_concept.png)
+![bg right:50% w:90%](../Lecture-Data-Structure/files/image/priority_queue_concept.png)
 - **Priority Queue** is a container that allows elements to be added or removed according to its priority.
 - When a new element enters the priority queue, it’s not placed last. Its position is determined by its priority.
 - An emergency room of a hospital or bug fixing list
@@ -53,7 +53,7 @@ Priority queue always return the element with the highest priority. Two methods 
 - top() or extract_max(): remove the highest-priority item from the priority queue and return it
 
 <div class="columns">
-    <img src="restricted/priotity_queue_requirement.png">
+    <img src="files/image/priotity_queue_requirement.png">
 </div>
 
 # Sorted Data Structures to Implement Priority Queue
@@ -62,8 +62,8 @@ Priority queue always return the element with the highest priority. Two methods 
 - Insertion is O(n): go through the whole list
 - Extracting the highest priority element is O(1): at the front of a linked list or at the end of an array.
 <div class="middle-grid">
-    <img src="restricted/priority_queue_sorted_array.png">
-    <img src="restricted/priority_queue_sorted_linked_list.png">
+    <img src="files/image/priority_queue_sorted_array.png">
+    <img src="files/image/priority_queue_sorted_linked_list.png">
 </div>
 
 # Unsorted Data Structures to Implement Priority Queue
@@ -72,8 +72,8 @@ Priority queue always return the element with the highest priority. Two methods 
 - Insertion is O(1): at the front of a linked list or at the end of an array
 - Extracting the highest priority element is O(n): go through the whole list.
 <div class="middle-grid">
-    <img src="restricted/priority_queue_unsorted_array.png">
-    <img src="restricted/priority_queue_bigO_compare.png">
+    <img src="files/image/priority_queue_unsorted_array.png">
+    <img src="files/image/priority_queue_bigO_compare.png">
 </div>
 Can we have a balance between insert() and top()?
 
@@ -81,7 +81,7 @@ Can we have a balance between insert() and top()?
 A heap is a special kind of tree. It can be **binary heaps** or **d-way heaps** (heaps where nodes have more than two children)
 
 <div class="middle-grid">
-    <img src="restricted/heap_structure.png">
+    <img src="files/image/heap_structure.png">
     <img src="files/image/min_heap_terminology.svg">
 </div>
 
@@ -92,29 +92,29 @@ A heap is a special kind of tree. It can be **binary heaps** or **d-way heaps** 
    - Nodes on the last level are as far left as possible (盡可能靠左)
 3. each node holds the highest priority element in the subtree rooted at that node
 <div class="middle-grid">
-    <img src="restricted/heap_complete.png">
-    <img src="restricted/heap_data.png">
+    <img src="files/image/heap_complete.png">
+    <img src="files/image/heap_data.png">
 </div>
 
 # Heap Features
 - Partial sort: all paths from the root to any leaf of the tree are sorted.
 - Node number of each level: there are 2<sup>i</sup> nodes of level i. (i is the height, distance from the root).
 <div class="middle-grid">
-    <img src="restricted/heap_partial_sort.png">
-    <img src="restricted/heap_node_number.png">
+    <img src="files/image/heap_partial_sort.png">
+    <img src="files/image/heap_node_number.png">
 </div>
 
 # Performance of Heap
 Implementing insert and top operations only walk a path from the root to a leaf. This means that their running time is proportional to the height of the heap (log n).
 <div class="middle-grid">
-    <img src="restricted/heap_Big_O.png">
+    <img src="files/image/heap_Big_O.png">
 </div>
 
 # Max-heap and Min-heap
 - A max-heap is a heap where each parent has a value no smaller than its children. priority(P) ≥ priority(C)
 - Set a priority function to turn min-heap to max-heap because max-heap is more straight-forward, like f(x) = -x
 <div class="middle-grid">
-    <img src="restricted/heap_max_min.png">
+    <img src="files/image/heap_max_min.png">
 </div>
 
 # Design a Heap
@@ -123,8 +123,8 @@ Implementing insert and top operations only walk a path from the root to a leaf.
 - Given a node with an index i > 0, its parent’s index is given by the integer division (i - 1) // 2, and its children have indexes 2 * i + 1 and 2 * i + 2
 - Assuming the static array has enough space to store the elements and left-justified. 
 <div class="middle-grid">
-    <img src="restricted/heap_index.png">
-    <img src="restricted/heap_array.png">
+    <img src="files/image/heap_index.png">
+    <img src="files/image/heap_array.png">
 </div>
 
 # Implement Heap Init and Helper Functions
@@ -153,13 +153,13 @@ class Heap:
 # Design Heap Insert (Bubble Up)
 
 <div class="middle-grid">
-    <img src="restricted/heap_insert_1.png">
-    <img src="restricted/heap_insert_2.png">
+    <img src="files/image/heap_insert_1.png">
+    <img src="files/image/heap_insert_2.png">
 </div>
 <br>
 <div class="middle-grid">
-    <img src="restricted/heap_insert_3.png">
-    <img src="restricted/heap_insert_4.png">
+    <img src="files/image/heap_insert_3.png">
+    <img src="files/image/heap_insert_4.png">
 </div>
 
 # Implement Heap Insert
@@ -186,9 +186,9 @@ def _bubble_up(self, index):
 # Design Heap Top (Push Down)
 
 <div class="middle-grid">
-    <img src="restricted/heap_top_1.png">
-    <img src="restricted/heap_top_2.png">
-    <img src="restricted/heap_top_3.png">
+    <img src="files/image/heap_top_1.png">
+    <img src="files/image/heap_top_2.png">
+    <img src="files/image/heap_top_3.png">
 </div>
 
 # Implement Heap Top
@@ -247,9 +247,9 @@ def _highest_priority_child_index(self, index):
 # Design Heap Heapify
 
 <div class="middle-grid">
-    <img src="restricted/heap_heapify_1.png">
-    <img src="restricted/heap_heapify_2.png">
-    <img src="restricted/heap_heapify_3.png">
+    <img src="files/image/heap_heapify_1.png">
+    <img src="files/image/heap_heapify_2.png">
+    <img src="files/image/heap_heapify_3.png">
 </div>
 
 # Implement Heap Heapipy

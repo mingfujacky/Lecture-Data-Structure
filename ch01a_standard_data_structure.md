@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -68,17 +68,17 @@ Python IDE
 ## Primitive
 - [Data types](https://github.com/mingfujacky/Lecture-Python/blob/main/1_python_basic/D_data_type.ipynb)
 - [String](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/A_string.ipynb)
-- [Number: Int and Float](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/B_number.ipynb)
-- [Bool](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/C_logic.ipynb)
+- [Number: Int and Float](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/C_number.ipynb)
+- [Bool](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/D_logic.ipynb)
 </div>
 
 <div>
 
 ## Container
-- [Tuple](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/D_tuple.ipynb)
-- [List](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/E_list.ipynb)
-- [Set](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/F_set.ipynb)
-- [Dict](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/G_dictionary.ipynb)
+- [Tuple](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/E_tuple.ipynb)
+- [List](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/F_list.ipynb)
+- [Set](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/G_set.ipynb)
+- [Dict](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/H_dictionary.ipynb)
 </div>
 
 </div>

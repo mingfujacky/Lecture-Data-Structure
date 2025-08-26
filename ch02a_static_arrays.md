@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -57,7 +57,7 @@ style: |
   [array_start_address] + ([size] * [index])
 - Static Arrays, Sorted Arrays, Dynamic Arrays
 
-![bg right:40% w:500 array memory](../Lecture-Data-Structure/restricted/array_memory_address.png)
+![bg right:40% w:500 array memory](../Lecture-Data-Structure/files/image/array_memory_address.png)
 
 # Arrays
 - Key characteristics

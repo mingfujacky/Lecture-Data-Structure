@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -53,7 +53,7 @@ style: |
 ---
 
 # Let Array be Left-Justified
-![bg right:40% w:500 left-justified](../Lecture-Data-Structure/restricted/a_left_justified_array.png)
+![bg right:40% w:500 left-justified](../Lecture-Data-Structure/files/image/a_left_justified_array.png)
 
  - Basically, we don’t have to follow any order when assigning new values to its elements
  - However, We might keep track of which elements are meaningful to application.
@@ -77,7 +77,7 @@ Class UnsortedArray:
 ```
 
 # Adding / Delete an Element in Unsorted Array
-![insert / delete elements in unsorted array](../Lecture-Data-Structure/restricted/unsorted_array_insert_delete.png)
+![insert / delete elements in unsorted array](../Lecture-Data-Structure/files/image/unsorted_array_insert_delete.png)
 
 [Code: unsorted array](../Lecture-Data-Structure/code/ch02c_unsorted_array.py)
 

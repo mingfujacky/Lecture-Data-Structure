@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -52,7 +52,7 @@ style: |
   }
 ---
 # Big-O Notation: A Framework for Measuring Algorithm Efficiency
-![bg right:50% w:600 Check algorithm goodness](../Lecture-Data-Structure/restricted/check_algorithm_goodness.png)
+![bg right:50% w:600 Check algorithm goodness](../Lecture-Data-Structure/files/image/check_algorithm_goodness.png)
 
 # Measure Terms of Algorithm Performance
 - Time complexity
@@ -87,7 +87,7 @@ def add_up_to(n):
 
 # Big-O Classify Growth Rate
 - Big-O notation is to **<u>classify</u>** algorithm's performance (complexity) grow as the <u>input size n</u> grows.
-![bg right:60% w:90%](restricted/search_big_O.png)
+![bg right:60% w:90%](files/image/search_big_O.png)
 
 # Big-O Definition
 - f(n): a function of algorithm's running time, n is input size
@@ -95,15 +95,15 @@ def add_up_to(n):
 - Define **O(n)** is a class of functions which grow as linear, like n, 10n, n/10
 - Since n, n/2 belongs to O(n), we write **<u>f(n)=O(n)</u>**, means f(n) belongs to O(n) class
 <div class="middle-grid">
-    <img src="restricted/fn_equal_on.png">
-    <img src="restricted/common_growth_function.png">
+    <img src="files/image/fn_equal_on.png">
+    <img src="files/image/common_growth_function.png">
 </div>
 
 # Big-O Concept
 Based on the definition of Big-O notation, f(n) = O(n), we do not care which line pair can bound f, as long as there is one pair when n is large enough.
 <div class="middle-grid">
-    <img src="restricted/y_eaual_n.png">
-    <img src="restricted/line_3n_plus_5.png">
+    <img src="files/image/y_eaual_n.png">
+    <img src="files/image/line_3n_plus_5.png">
 </div>
 
 # Asymptotically Equivalent

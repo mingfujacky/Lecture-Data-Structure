@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -42,7 +42,7 @@ style: |
   }
 ---
 # Chapter 9: Queue
-![bg right:50% w:90%](../Lecture-Data-Structure/restricted/queue_ice_cream.png)
+![bg right:50% w:90%](../Lecture-Data-Structure/files/image/queue_ice_cream.png)
 - **Queue** is a container that allows elements to be added or removed according to FIFO rule (first in, first out).
 
 # Requirements of a Queue
@@ -51,8 +51,8 @@ Queue follows FIFO rule, we design its interface with only two methods:
 - Dequeue(): remove the least recently added element from the queue and return it
 
 <div class="columns">
-    <img src="restricted/queue_operations.png">
-    <img src="restricted/queue_illustration.png">
+    <img src="files/image/queue_operations.png">
+    <img src="files/image/queue_illustration.png">
 </div>
 
 # Consider Data Structures to Implement Queue
@@ -61,9 +61,9 @@ Queue follows FIFO rule, we design its interface with only two methods:
 - Doubly linked list
 - Stack (complicated)
 <div class="middle-grid">
-    <img src="restricted/queue_static_array.png">
-    <img src="restricted/queue_static_array_full.png">
-    <img src="restricted/queue_linked_list.png">
+    <img src="files/image/queue_static_array.png">
+    <img src="files/image/queue_static_array_full.png">
+    <img src="files/image/queue_linked_list.png">
 </div>
 
 # Design Queue by Static Array
@@ -72,9 +72,9 @@ When 'Rear' reaches the end of static array and there are some unused space at t
 - Circular queue
 
 <div class="middle-grid">
-    <img src="restricted/queue_circular_1.png">
-    <img src="restricted/queue_circular_2.png">
-    <img src="restricted/queue_circular_3.png">
+    <img src="files/image/queue_circular_1.png">
+    <img src="files/image/queue_circular_2.png">
+    <img src="files/image/queue_circular_3.png">
 
 </div>
 
@@ -149,9 +149,9 @@ def is_full(self):
 
 # Implement Queue by Static Array - Enqueue
 <div class="middle-grid">
-    <img src="restricted/queue_static_array_enqueue1.png">
-    <img src="restricted/queue_static_array_enqueue2.png">
-    <img src="restricted/queue_static_array_enqueue3.png">
+    <img src="files/image/queue_static_array_enqueue1.png">
+    <img src="files/image/queue_static_array_enqueue2.png">
+    <img src="files/image/queue_static_array_enqueue3.png">
 </div>
 
 ```python
@@ -165,9 +165,9 @@ def enqueue(self, value):
 
 # Implement Queue by Static Array - Dequeue
 <div class="middle-grid">
-    <img src="restricted/queue_static_array_dequeue1.png">
-    <img src="restricted/queue_static_array_dequeue2.png">
-    <img src="restricted/queue_static_array_dequeue3.png">
+    <img src="files/image/queue_static_array_dequeue1.png">
+    <img src="files/image/queue_static_array_dequeue2.png">
+    <img src="files/image/queue_static_array_dequeue3.png">
 </div>
 
 ```python
@@ -184,8 +184,8 @@ def dequeue(self):
 - When we try to enqueue an element on a full queue, we can just allocate a new array with double size.
 - If we copy the array as it is over the new array, we will encounter a big problem: the rear and front pointers will no longer make sense  
 <div class="middle-grid">
-    <img src="restricted/queue_dynamic_array_enqueue1.png">
-    <img src="restricted/queue_dynamic_array_enqueue2.png">
+    <img src="files/image/queue_dynamic_array_enqueue1.png">
+    <img src="files/image/queue_dynamic_array_enqueue2.png">
 </div>
 This won’t be any slower than copying the elements in the same positions as they were, and it won’t affect the Big-O. But it will make the code more complicated.
 

@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -60,9 +60,12 @@ style: |
 - <span class="blue-text">**Data structures**</span>: organize and store information in a program to efficiently manipulate data
 - <span class="blue-text">**Algorithm**</span>: set of instructions designed to solve a specific problem
 
+[![Roadmap To Learn Data Structures And Algorithms](https://i.ytimg.com/vi/uZe1Bbsycyc/mqdefault.jpg)](https://youtu.be/uZe1Bbsycyc?si=zcS704k5KTRrkD_u&t=229)
+
+
 # Why Should I Care About Data Structure
 ### Solve Lottery by SET or LIST, which data structure is better?
 [Code of Lottery](../Lecture-Data-Structure/code/lottery.py)
 
 # A Mental Model for Applying Data Structures
-![bg right:50% w:90% apply data structure](../Lecture-Data-Structure/restricted/a_mental_model_for_applying_data_structures.png)
+![bg right:50% w:90% apply data structure](../Lecture-Data-Structure/files/image/a_mental_model_for_applying_data_structures.png)

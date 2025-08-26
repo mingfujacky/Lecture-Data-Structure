@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -68,7 +68,7 @@ style: |
 - #### Email: jacky.jw.lin@nycu.edu.tw
 
 # 課程助教
-謝勵維 hsiehliwe.sc12@nycu.edu.tw
+蔡孟哲 (aayy0917.sc13@nycu.edu.tw)
 
 # 課程規劃
 - #### 課程目標
@@ -76,29 +76,30 @@ style: |
   *-* Use Python to implement basic algorithms to sharpen coding skill.
 
 - #### 授課方式
-  *-* 教材講解
-  *-* 課堂 Lab 實作 (上課請攜帶電腦)
+  - 教材講解
+  - 課堂 Lab 實作 (上課請攜帶電腦)
+  - Deliver final project in group or individual. The project topic is related to data structures and algorithms. For example,
+    - 成績管理系統 / 圖書管理系統 / 井字遊戲 / Undo-redo
+    - 迷宮 / Huffman 編碼 / 排序演算法比較 / 抄襲檢測 / 社交網路分析
+
 
 # 評分方式
-- Attendance(10%): roll call and QA
-- Homework (40%): 8 times
-- Mid-term exam (25%): closed-book exam
-- Final-term exam (25%): closed-book exam
+- Attendance(10%): 5 roll calls 
+  - 2 points for full attendance
+  - 1 point for excused absence (with approved leave)
+  - 0 point for unexcused absence
+- Homework (30%): 6 assignments will be given (late submissions will not be accepted)
+- Mid-term exam (20%): closed-book written exam, covering the first half of the course.
+- Final-term exam (20%): closed-book written exam, covering the entire course.
+- Project (20%): live demo + algorithm explanation + complexity analysis
+  - (10%) Final report oral presentation: Week 15
+  - (10%) Submit final written report by Week 17 (don't be late)
 
 # 授課大綱
-[113下學期](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=113&Sem=2&CrsNo=520018&lang=)
+[114上學期](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=114&Sem=1&CrsNo=520016&lang=)
 
 # 時時實際操作
 <br>
 >我鼓勵你使用鍵盤手動複製這些程式，而不是直接將其原始程式碼複製貼上到新檔案中；這有助於你對程式產生「肌肉記憶」，並迫使你在鍵入時<span class="blue-text">考慮每一行</span>。
 
 ![bg right:30% w:300 遞迴演算法大師親授面試心法](https://i3.momoshop.com.tw/1721136961/goodsimg/0013/030/254/13030254_R.jpg)
-
-# [AI正在創造新一代文盲工程師？](https://buzzorange.com/techorange/2025/02/19/ai-and-learning/)
-- 一位擁有12年coding經驗的資深工程師 Namanyay，揭露自己用 AI 寫程式後，開始停止閱讀文件、除錯能力退步，後來也不再閱讀錯誤訊息，只是進行複製貼上。驚覺 coding 技術變差的他開始「復健計畫」，規定自己每週一天不用 AI 寫程式。
-- AI使得過去解決問題的 Coding 基礎知識消失了
-- 如何在使用 AI 的同時保持思考？
-  - 以學習心態使用 AI。當獲得解答時，深入詢問原因，理解背後的邏輯。
-  - 與其他工程師交流討論
-  - 在進行程式碼檢查時，要用不同角度來檢視
-  - 偶爾嘗試從零開始編寫程式

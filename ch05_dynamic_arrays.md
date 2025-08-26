@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -44,10 +44,10 @@ Once a fixed size array full:
 - A new, larger array must be created.
 - Elements must be transferred from the old array to the new one.
 - It is expensive.
-![bg right:50% w:80% fix size full](restricted/fix_size_array_full.png)
+![bg right:50% w:80% fix size full](files/image/fix_size_array_full.png)
 
 # Two Strategies to Fulfill Demand
-![bg right:50% w:80% fix size full](restricted/tradeoffs_fixed_size.png)
+![bg right:50% w:80% fix size full](files/image/tradeoffs_fixed_size.png)
 - Allocating a small array, then increase size when needed
  <span class="blue-text">busy to move data</span>
 - Allocating a large array
@@ -86,7 +86,7 @@ Increase size by 1| 1 + 2 + 3 + 4 + … + 98 + 99| 4950 | O(n**2)
 Increase size by 4| 1 + 5 + 9 + 13 +… + 93 + 97 |1225 | O(n**2)
 Double the size |1 + 2 + 4 + 8 + 16 + 32 + 64 |127 | O(n)
 
-![bg right:40% w:100% fix size full](restricted/apply_strategy_arrays.png)
+![bg right:40% w:100% fix size full](files/image/apply_strategy_arrays.png)
 ><span class="small-text">'Double the size'的複雜度：https://stackoverflow.com/questions/19146037/efficiency-of-growing-a-dynamic-array-by-a-fixed-constant-each-time</span>
 ><span class="small-text">等比數列的和：https://zh.wikipedia.org/zh-tw/等比数列</span>
 
@@ -104,8 +104,8 @@ Double the size |1 + 2 + 4 + 8 + 16 + 32 + 64 |127 | O(n)
 </div>
 
 <div class="columns">
-    <img src="restricted/halve_on_delete.png" alt="halve on delete">
-    <img src="restricted/smarter_shrinking.png" alt="smarter shrinking">
+    <img src="files/image/halve_on_delete.png" alt="halve on delete">
+    <img src="files/image/smarter_shrinking.png" alt="smarter shrinking">
 </div>
 
 # Implementing a Dynamic Array
@@ -132,7 +132,7 @@ class DynamicArray():
 ```
 
 # Insert Elements into Dynamic Array
-![bg right:50% w:100%](restricted/dynamic_array_insert.png)
+![bg right:50% w:100%](files/image/dynamic_array_insert.png)
 
 # Delete Elements from Dynamic Array
-![bg right:50% w:100%](restricted/dynamic_array_delete.png)
+![bg right:50% w:100%](files/image/dynamic_array_delete.png)

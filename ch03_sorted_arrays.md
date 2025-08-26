@@ -1,10 +1,10 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
-footer: 國立陽明交通大學 電子與光子學士學位學程
+header: 國立陽明交通大學 電子與光子學士學位學程
 headingDivider: 1
 style: |
   section::after {
@@ -98,7 +98,7 @@ style: |
 ```
 
 # Design Sorted Arrays Class
-![Sorted array func diagram](../Lecture-Data-Structure/restricted/sorted_array_func_diagram.png)
+![Sorted array func diagram](../Lecture-Data-Structure/files/image/sorted_array_func_diagram.png)
 
 # Implement Sorted Arrays Class
 ```python
@@ -117,10 +117,10 @@ class SortedArray:
 ```
 
 # Insert and Delete an Element on Sorted Array
-![bg right:60% w:600 Sorted array insert and remove](../Lecture-Data-Structure/restricted/sorted_array_insert_remove.png)
+![bg right:60% w:600 Sorted array insert and remove](../Lecture-Data-Structure/files/image/sorted_array_insert_remove.png)
 
 # Search an Element on Sorted Array
-![bg right:60% w:600 Search on sorted array](../Lecture-Data-Structure/restricted/sorted_array_search.png)
+![bg right:60% w:600 Search on sorted array](../Lecture-Data-Structure/files/image/sorted_array_search.png)
 
 # Implementation a Sorted Array
 [Code: sorted array](../Lecture-Data-Structure/code/ch03_sorted_array.py)
