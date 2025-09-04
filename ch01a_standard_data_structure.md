@@ -51,14 +51,15 @@ style: |
     font-size: 0.75rem;
   }
 ---
-# Integrated Development Environment (IDE)
-
-[An IDE running environment](https://github.com/mingfujacky/Lecture-Python/blob/main/1_python_basic/C_thonny_introduction.md#一個可以執行-python-程式碼的環境)
-
-Python IDE
-- Thonny
+# Python Integrated Development Environment (IDE)
+- **Thonny**
 - Google Colab
 - VSCode
+- Jupyter Notebook
+
+[Thonny installation and introduction](https://github.com/mingfujacky/Lecture-Python/blob/main/1_python_basic/C_thonny_introduction.md#一個可以執行-python-程式碼的環境)
+
+
 
 # Python Standard Data Structures
 ![bg right:50% w:90% Python built-in data types](files/image/data_structure_category.jpg)

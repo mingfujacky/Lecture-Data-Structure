@@ -78,7 +78,7 @@ style: |
 - #### 授課方式
   - 教材講解
   - 課堂 Lab 實作 (上課請攜帶電腦)
-  - Deliver final project in group or individual. The project topic is related to data structures and algorithms. For example,
+  - Deliver final project in group (<=3 members) or individual. The project topic is related to data structures and algorithms. For example,
     - 成績管理系統 / 圖書管理系統 / 井字遊戲 / Undo-redo
     - 迷宮 / Huffman 編碼 / 排序演算法比較 / 抄襲檢測 / 社交網路分析
 
@@ -89,11 +89,11 @@ style: |
   - 1 point for excused absence (with approved leave)
   - 0 point for unexcused absence
 - Homework (30%): 6 assignments will be given (late submissions will not be accepted)
-- Mid-term exam (20%): closed-book written exam, covering the first half of the course.
-- Final-term exam (20%): closed-book written exam, covering the entire course.
+- Mid-term exam (20%): closed-book written exam @ 10/31
+- Final-term exam (20%): closed-book written exam @ 12/19
 - Project (20%): live demo + algorithm explanation + complexity analysis
-  - (10%) Final report oral presentation: Week 15
-  - (10%) Submit final written report by Week 17 (don't be late)
+  - (10%) Final report oral presentation @ 12/12
+  - (10%) Submit final written report @ 12/26 (don't be late)
 
 # 授課大綱
 [114上學期](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=114&Sem=1&CrsNo=520016&lang=)
