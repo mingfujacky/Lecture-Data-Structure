@@ -65,7 +65,7 @@ style: |
 
 # Why Should I Care About Data Structure
 ### Solve Lottery by SET or LIST, which data structure is better?
-[Code of Lottery](../Lecture-Data-Structure/code/lottery.py)
+[Code of Lottery](code/lottery.py)
 
 # A Mental Model for Applying Data Structures
-![bg right:50% w:80% apply data structure](../Lecture-Data-Structure/files/image/a_mental_model_for_applying_data_structures.png)
+![bg right:50% w:80% apply data structure](files/image/a_mental_model_for_applying_data_structures.png)
