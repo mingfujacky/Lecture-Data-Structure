@@ -68,4 +68,4 @@ style: |
 [Code of Lottery](../Lecture-Data-Structure/code/lottery.py)
 
 # A Mental Model for Applying Data Structures
-![bg right:50% w:90% apply data structure](../Lecture-Data-Structure/files/image/a_mental_model_for_applying_data_structures.png)
+![bg right:50% w:80% apply data structure](../Lecture-Data-Structure/files/image/a_mental_model_for_applying_data_structures.png)
