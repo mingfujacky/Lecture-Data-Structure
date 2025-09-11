@@ -83,3 +83,7 @@ style: |
 </div>
 
 </div>
+
+# Python Syntax
+- [Flow Control](https://github.com/mingfujacky/Lecture-Python/blob/main/1_python_basic/H_flow_control.ipynb)
+- [Function](https://github.com/mingfujacky/Lecture-Python/blob/main/1_python_basic/I_function.ipynb)
