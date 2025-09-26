@@ -61,7 +61,7 @@ style: |
 - Constant: Constants are variables whose values do not change during the program's execution.
 - Other Elements: May contain classes, global variables, or import statements.
 
-[Module material](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/K_module.ipynb)
+[Module material](https://github.com/mingfujacky/Lecture-Python/blob/main/2_python_middle/L_module.ipynb)
 
 # Package and Module
 ![bg right:70% w:100% Package and module](https://images.squarespace-cdn.com/content/v1/590eeff5b8a79b2147a783be/3a8a5a39-1cbb-43a5-82ad-f4c49da41daf/Picture+1.png?format=2500w)
