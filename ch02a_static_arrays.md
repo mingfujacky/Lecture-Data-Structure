@@ -112,4 +112,4 @@ my_package/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---- sorted_array.py
 |---- queues/
 
-(2) Write a main program to import core.py and use class Array to create an array object (codetype = l, size = 5), then store 4 integers
+(2) Write a main program to import core.py and use class Array to create an array object (codetype = i, size = 5), then store 4 integers

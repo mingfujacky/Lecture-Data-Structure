@@ -1,22 +1,9 @@
 import array
 
 class Array:
-    """
-    A core Array class built upon the built-in array module and provides basic functionality
+    """An array with a fixed size."""
 
-    According to built-in array, the type is specified at object creation time by using a type code
-    Two type codes are used in this class:
-
-        Type code   C Type             Minimum size in bytes
-        'l'         signed integer     4
-        'f'         floating point     4
-
-     Parameters:
-         size: The maximum number of elements the array can hold.
-         typecode: the typecode of the array. Defaults to 'l' for int.
-    """
-
-    def __init__(self, size, typecode="l"):
+    def __init__(self, size, typecode="i"):
         if size <= 0:
             raise ValueError(f"Invalid array size (must be positive): {size}")
         self._size = size

@@ -15,11 +15,10 @@ print()
 print("--- implement array by array.array ---")
 from array import array
 
-my_array = array("l", [1, 2, 3])  # same data types, l is signed integer
+my_array = array("i", [1, 2, 3])  # same data types, i is signed integer
 print(my_array[0])  # get the value at the given index
 my_array[1] = 100  # set the value at the given index
 my_array.append(4)  # not fixed size, can be appended
-print(repr(my_array))
 print(my_array)
 print()
 
