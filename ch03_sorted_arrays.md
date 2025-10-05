@@ -98,7 +98,7 @@ style: |
 ```
 
 # Design Sorted Arrays Class
-![Sorted array func diagram](../Lecture-Data-Structure/files/image/sorted_array_func_diagram.png)
+![Sorted array func diagram](files/image/sorted_array_func_diagram.png)
 
 # Implement Sorted Arrays Class
 ```python
@@ -117,13 +117,13 @@ class SortedArray:
 ```
 
 # Insert and Delete an Element on Sorted Array
-![bg right:60% w:600 Sorted array insert and remove](../Lecture-Data-Structure/files/image/sorted_array_insert_remove.png)
+![bg right:60% w:600 Sorted array insert and remove](files/image/sorted_array_insert_remove.png)
 
 # Search an Element on Sorted Array
-![bg right:60% w:600 Search on sorted array](../Lecture-Data-Structure/files/image/sorted_array_search.png)
+![bg right:60% w:600 Search on sorted array](files/image/sorted_array_search.png)
 
 # Implementation a Sorted Array
-[Code: sorted array](../Lecture-Data-Structure/code/ch03_sorted_array.py)
+[Code: sorted array](code/ch03_sorted_array.py)
 
 # Insert a Value Into Sorted Array (Pseudo Code)
 ![bg right:30% w:90%](files/image/insertion_value_into_sorted_array.png)
