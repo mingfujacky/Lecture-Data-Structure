@@ -57,7 +57,7 @@ style: |
   [array_start_address] + ([size] * [index])
 - Static Arrays, Sorted Arrays, Dynamic Arrays
 
-![bg right:40% w:500 array memory](../Lecture-Data-Structure/files/image/array_memory_address.png)
+![bg right:40% w:500 array memory](files/image/array_memory_address.png)
 
 # Arrays
 - Key characteristics
@@ -77,7 +77,7 @@ Class          |Fixed Size|Fixed Type|Implementation
 **array.array**|NO    |YES              |dynamic array
 **Numpy.array**|YES   |YES              |static array
 
-[Code: array-like in Python](../Lecture-Data-Structure/code/ch02a_python_array_like.py)
+[Code: array-like in Python](code/ch02a_python_array_like.py)
 
 # Implement Arrays as a Core Language Feature
   - allocated in continuous memory
