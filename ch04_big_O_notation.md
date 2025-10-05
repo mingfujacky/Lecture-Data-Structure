@@ -52,7 +52,7 @@ style: |
   }
 ---
 # Big-O Notation: A Framework for Measuring Algorithm Efficiency
-![bg right:50% w:600 Check algorithm goodness](../Lecture-Data-Structure/files/image/check_algorithm_goodness.png)
+![bg right:50% w:600 Check algorithm goodness](files/image/check_algorithm_goodness.png)
 
 # Measure Terms of Algorithm Performance
 - Time complexity

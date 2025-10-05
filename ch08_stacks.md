@@ -42,7 +42,7 @@ style: |
   }
 ---
 # Chapter 8: Stack
-![bg right:50% w:90%](../Lecture-Data-Structure/files/image/stack_in_stock_management.png)
+![bg right:50% w:90%](files/image/stack_in_stock_management.png)
 - **Stack** is a container that allows elements to be added or removed according to LIFO rule (last in, first out).
 
 # Requirements of a Stack

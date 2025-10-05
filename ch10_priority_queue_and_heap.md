@@ -42,7 +42,7 @@ style: |
   }
 ---
 # Chapter 10: Priority Queues and Heaps
-![bg right:50% w:90%](../Lecture-Data-Structure/files/image/priority_queue_concept.png)
+![bg right:50% w:90%](files/image/priority_queue_concept.png)
 - **Priority Queue** is a container that allows elements to be added or removed according to its priority.
 - When a new element enters the priority queue, it’s not placed last. Its position is determined by its priority.
 - An emergency room of a hospital or bug fixing list

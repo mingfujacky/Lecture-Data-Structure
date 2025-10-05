@@ -42,7 +42,7 @@ style: |
   }
 ---
 # Chapter 11: Binary Search Tree
-![bg right:50% w:90%](../Lecture-Data-Structure/files/image/tree_concept.png)
+![bg right:50% w:90%](files/image/tree_concept.png)
 - A generic tree is a data structure that consists of nodes connected by links. 
 - Each node contains a value and a variable number of links to other nodes, from zero to some number k (the branching number of a k-ary tree, that is, the maximum number of links a node can have).
 

@@ -44,10 +44,10 @@ style: |
 - **Abstract data type**: a theoretical concept that describes at a high level how data can be organized and the operations that can be performed on the data.
 - **Data structure**: how data is organized in memory (or disk!) and the internal representation details of the DS
 - **Implementation**: choose a programming language and translate the DS into code.
-![bg right:40% w:90%](../Lecture-Data-Structure/files/image/abstract_data_type.png)
+![bg right:40% w:90%](files/image/abstract_data_type.png)
 
 # A Simple ADT: Bag (Shopping Cart)
-![bg right:35% w:90%](../Lecture-Data-Structure/files/image/bag_diagram.png)
+![bg right:35% w:90%](files/image/bag_diagram.png)
 A bag is a collection of objects with 2 methods:
 - insert(x)— allow a client to add a single element to the bag. The order of insertion is not important.
 - iterate() — allow a client to go through all the elements in the bag. The order in which elements are iterated is not guaranteed.
