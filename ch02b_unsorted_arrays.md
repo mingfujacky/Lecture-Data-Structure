@@ -53,7 +53,7 @@ style: |
 ---
 
 # Let Array be Left-Justified
-![bg right:40% w:500 left-justified](../Lecture-Data-Structure/files/image/a_left_justified_array.png)
+![bg right:40% w:500 left-justified](files/image/a_left_justified_array.png)
 
  - Basically, we don’t have to follow any order when assigning new values to its elements
  - However, We might keep track of which elements are meaningful to application.
@@ -77,9 +77,9 @@ Class UnsortedArray:
 ```
 
 # Adding / Delete an Element in Unsorted Array
-![insert / delete elements in unsorted array](../Lecture-Data-Structure/files/image/unsorted_array_insert_delete.png)
+![insert / delete elements in unsorted array](files/image/unsorted_array_insert_delete.png)
 
-[Code: unsorted array](../Lecture-Data-Structure/code/ch02c_unsorted_array.py)
+[Code: unsorted array](code/ch02c_unsorted_array.py)
 
 # Homework
 DSA HW (C): due 2025/03/28 23:59
