@@ -90,7 +90,7 @@ Class          |Fixed Size|Fixed Type|Implementation
   - Get the number of elements in the array
   - Display the array
 
-[Code: core array](../Lecture-Data-Structure/code/ch02b_core_array.py)
+[Code: core array](code/ch02b_core_array.py)
 
 # Magic Method
 ![bg right:70% w:60%](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff69d1d4d-91ac-409a-baa2-ccd4c4aaab13_1700x2087.png)
