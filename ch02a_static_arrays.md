@@ -79,12 +79,13 @@ Class          |Fixed Size|Fixed Type|Implementation
 
 [Code: array-like in Python](code/ch02a_python_array_like.py)
 
-# Implement Arrays as a Core Language Feature
+# Static Arrays as a Core Language Feature
   - allocated in continuous memory
   - restricted to storing data of the same type
-  - size of arrays must be decided when the array is created
+  - size of arrays must be decided when the array is created, and that size can’t be changed.
 
 # The core array class will have the following methods:
+  - Basically, it is a static array implementation.
   - Initialize: create an array with a given size and type
   - Get the value at a given index
   - Get the number of elements in the array

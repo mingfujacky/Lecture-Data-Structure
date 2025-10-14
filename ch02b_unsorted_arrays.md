@@ -51,13 +51,14 @@ style: |
     font-size: 0.75rem;
   }
 ---
+# Unsorted Arrays
+- Unsorted Arrays is a simple array-based data structure that stores a collection of elements without any specific order.
+- The key characteristic of unsorted arrays is that the elements are not arranged in any particular order, which allows for quick insertion and deletion operations.
+- However, searching for elements may require a linear scan of the array, as there is no inherent order to facilitate faster searches.
 
-# Let Array be Left-Justified
+# Let Unsorted Array be Left-Justified
 ![bg right:40% w:500 left-justified](files/image/a_left_justified_array.png)
-
  - Basically, we don’t have to follow any order when assigning new values to its elements
- - However, We might keep track of which elements are meaningful to application.
- - In most cases, the order in which we store the elements won’t matter.
  - Thus, we can simply add the new elements at the first unused index in the array and keep the array left-justified: 
  - That is, if we add k ≤ n elements to our array, they will be at the indexes from 0 to k-1.
 
@@ -82,5 +83,5 @@ Class UnsortedArray:
 [Code: unsorted array](code/ch02c_unsorted_array.py)
 
 # Homework
-DSA HW (C): due 2025/03/28 23:59
-DSA HW (D): due 2025/04/04 23:59
+DSA HW (C): due 2025/10/24 23:59
+DSA HW (D): due 2025/10/31 23:59

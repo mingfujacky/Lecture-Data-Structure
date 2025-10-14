@@ -1,7 +1,7 @@
 import array
 
 class Array:
-    """An array with a fixed size."""
+    """An array with a fixed size. Static type."""
 
     def __init__(self, size, typecode="i"):
         if size <= 0:
