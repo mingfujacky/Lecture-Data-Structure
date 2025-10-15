@@ -186,3 +186,6 @@ Worst|O(n) (target is last or not found)
   – O(n*log<sub>2</sub>(n)): **linearithmic**, priority queues
   – O(n<sup>2</sup>): **quadratic**, all pairs in an array.
   – O(2<sup>n</sup>): **exponential**, all subsets of an array
+
+# Homework
+DSA HW (E): due 2025/11/14 23:59  

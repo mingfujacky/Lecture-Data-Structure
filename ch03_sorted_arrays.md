@@ -164,5 +164,3 @@ for i = 1 to A.length - 1
       j = j -1
    A[j + 1] = key
 ```
-# Homework
-DSA HW (E): due 2025/04/18 23:59
