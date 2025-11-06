@@ -188,4 +188,4 @@ Worst|O(n) (target is last or not found)
   – O(2<sup>n</sup>): **exponential**, all subsets of an array
 
 # Homework
-DSA HW (E): due 2025/11/14 23:59  
+DSA HW (E)  

@@ -95,6 +95,18 @@ style: |
   - (10%) Final report oral presentation @ 12/12
   - (10%) Submit final written report @ 12/26 (don't be late)
 
+# Final Report
+- Recommend TOC
+  - What problem you plan to solve
+  - Describe the algorithm and data structure you take to solve the problem
+  - Demonstrate code structure and explain major functions
+  - Show testing result
+  - Analyze performance
+- Final project oral presentation: 12/12, 10 minutes per person
+- Final project written report: 12/26 23:59
+- Candidates
+https://docs.google.com/spreadsheets/d/1_VRbVq8M-T5hg49GJxGY-q_SOzCwAgBK8vVqmmurYZ0/edit?gid=994583042#gid=994583042
+
 # 授課大綱
 [114上學期](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=114&Sem=1&CrsNo=520016&lang=)
 

@@ -131,8 +131,60 @@ class DynamicArray():
     def delete(self, target): pass
 ```
 
-# Insert Elements into Dynamic Array
+# Design Dynamic Array: Insert Elements
 ![bg right:50% w:100%](files/image/dynamic_array_insert.png)
 
-# Delete Elements from Dynamic Array
+# Design Dynamic Array: Delete Elements
 ![bg right:50% w:100%](files/image/dynamic_array_delete.png)
+
+# Implementation of Dynamic Array: Insert Elements
+```python
+from arrays.core import Array
+
+def __init__(self, initial_capacity=1, typecode="l"):
+    self._array = Array(initial_capacity, typecode)
+    self._capacity = initial_capacity
+    self._size = 0
+    self._typecode = typecode
+
+def _is_full(self):
+    return self._size >= self._capacity
+
+def _double_size(self):
+        old_array = self.??????
+        self._array = Array(self._capacity * ?, self._typecode)
+        self._capacity *= 2
+        for i in range(self.?????):
+            self._array[i] = old_array[i]            
+
+def insert(self, value):
+    if self.????????():
+        self._double_size()
+    self._array[self._size] = value
+    self._size ?? 1    
+```
+
+# Implementation of Dynamic Array: Delete Elements
+```python
+    def _halve_size(self):
+        old_array = self._array
+        self._array = Array(self._capacity ?? 2, self._typecode)
+        self._capacity //= 2
+        for i in range(self.?????):
+            self._array[i] = old_array[i]
+
+    def delete(self, target):
+        index = self.find(target)
+        if index is None:
+            raise ValueError(
+                f"Unable to delete element {target}: the entry is not in the array"
+            )
+        # Must shift all the elements after the position of the target
+        for i in range(index, self._size - 1):
+            self._array[?] = self._array[? ? ?]
+        self._size -= 1
+
+        # Check if we should shrink the array
+        if self._capacity > 1 and self._size <= self._capacity / ?:
+            self.???????????()            
+```
