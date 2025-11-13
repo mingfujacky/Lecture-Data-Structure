@@ -59,7 +59,7 @@ A **linked list** is made of nodes
 # Compare Linked List to Array
 - More flexibility: not need allocate space in advance and no data copying cost when add elements
 - Lack direct indexing
-  - find an element in array: O(1)
+  - find an element (by location) in array: O(1)
   - find an element in linked list: O(n)
 ![bg right:50% w:90%](files/image/linked_list_vs_array.png)
 
@@ -75,10 +75,9 @@ A **linked list** is made of nodes
   - Last element of the list, not point to next node, point to Null (None)
 - Each node only knows its successor
 
-# Requirements of Singly Linked List
+# Requirements of Node
 <div class="columns">
     <img src="files/image/linked_list_node_implementation.png">
-    <img src="files/image/linked_list_implementation.png">
 </div>
 
 # Implement Node Class
@@ -110,6 +109,11 @@ print(repr(node1)); print(repr(node2))
 node3 = Node(3); node4 = Node(4); node3.append(node4)
 print(repr(node3)); print(repr(node4))
 ```
+# Requirements of Singly Linked List
+<div class="columns">
+    <img src="files/image/linked_list_implementation.png">
+    <img src="files/image/linked_list_node_implementation.png">
+</div>
 
 # Design Singly Linked List
 - Do not need specify a initial size
@@ -232,7 +236,7 @@ Time complexity O(n)
 Test case need test empty list, delete first node, delete last node, delete middle node
 
 
-# Sorted Linked List
+# Sorted Linked List to Make Linked List is Sorted
 <div class="columns">
     <img src="files/image/linked_list_sorted.png">
 </div>
