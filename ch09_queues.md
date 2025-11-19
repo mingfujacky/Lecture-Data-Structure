@@ -66,6 +66,9 @@ Queue follows FIFO rule, we design its interface with only two methods:
     <img src="files/image/queue_linked_list.png">
 </div>
 
+# Use Two Stacks to Implement Queue
+![bg right:60% w:90%](https://hetalrachh.home.blog/wp-content/uploads/2020/04/queue-using-two-stacks.png)
+
 # Design Queue by Static Array
 When 'Rear' reaches the end of static array and there are some unused space at the front.
 - Move all elements in the queue toward the start of the array. This means an O(n) overhead. It is inefficient.

@@ -33,7 +33,7 @@ style: |
   }
 ---
 # Chapter 7: Abstract Data Types
-- **Abstract data type (ADT)** is a mathematical model for data types, defined by its behavior from the point of view of data users specifically in terms of 
+- **Abstract data type (ADT)** is a abstract model for data types, defined by its behavior from the point of view of data users specifically in terms of 
   - possible values
   - possible operations
   - behavior of operations 
