@@ -63,6 +63,6 @@ class Bag:
     def insert(self, value):
         self._data.insert_in_front(value)
 
-    def traverse(self):
+    def iterate(self):
         return self._data.traverse()        
 ```
