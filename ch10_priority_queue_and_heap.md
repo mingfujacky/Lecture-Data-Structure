@@ -87,7 +87,7 @@ A heap is a special kind of tree. It can be **binary heaps** or **d-way heaps** 
 
 # Heap Properties
 1. A binary heap, each node of the tree can have at most two children
-2. Heap tree is “almost complete”
+2. Heap tree is “complete” or “almost complete”
    - Every level of the tree is complete, except the last level 
    - Nodes on the last level are as far left as possible (盡可能靠左)
 3. each node holds the highest priority element in the subtree rooted at that node
@@ -106,9 +106,7 @@ A heap is a special kind of tree. It can be **binary heaps** or **d-way heaps** 
 
 # Performance of Heap
 Implementing insert and top operations only walk a path from the root to a leaf. This means that their running time is proportional to the height of the heap (log n).
-<div class="middle-grid">
-    <img src="files/image/heap_Big_O.png">
-</div>
+![](files/image/heap_Big_O.png)
 
 # Max-heap and Min-heap
 - A max-heap is a heap where each parent has a value no smaller than its children. priority(P) ≥ priority(C)
@@ -139,16 +137,16 @@ class Heap:
             self._elements = []
 
     def _has_lower_priority(self, element_1, element_2):
-        return self._priority(element_1) < self.?????????(element_2)
+        return self._priority(element_1) < self._priority(element_2)
     
     def _has_higher_priority(self, element_1, element_2):
-        return self._priority(element_1) ? self._priority(element_2)
+        return self._priority(element_1) 。 self._priority(element_2)
     
     def _left_child_index(self, index):
-        return index * ? + ?
+        return index * ? + 1
     
     def _parent_index(self, index):
-        return (index ? ?) ?? 2        
+        return (index - 1) ?? 2        
 ```
 # Design Heap Insert (Bubble Up)
 
@@ -165,22 +163,22 @@ class Heap:
 # Implement Heap Insert
 ```python
 def insert(self, element):
-    self._elements.??????(element)
+    self._elements.ap????(element)
     self._bubble_up(len(self._elements) - 1)
 
 def _bubble_up(self, index):
     element = self._elements[index]
     while index > 0:
-        parent_index = self.?????????????(index)
+        parent_index = self._parent_index(index)
         parent = self._elements[parent_index]
-        if self._has_higher_priority(???????, parent):
+        if self._has_higher_priority(el?????, parent):
         # There is a violation of the heap’s property, nad we need to swap the new element with its parent
-            self._elements[index] = ?????
-            index = ????????????
+            self._elements[index] = parent
+            index = parent_?????
         else:
         # The new element and its parent don’t violate the heap’s properties, so we have found the final place to insert the new element.    
-            ?????
-    self._elements[index] = ???????    
+            break
+    self._elements[index] = element    
 ```
 
 # Design Heap Top (Push Down)
@@ -202,8 +200,8 @@ def top(self):
         element = self._elements.pop()
     else:
         element = self._elements[0]
-        self._elements[?] = self._elements.???()
-        self._push_down(?)
+        self._elements[0] = self._elements.???()
+        self._push_down(0)
     return element
 ```
 # Implement Heap Top Helper (_push_down)
@@ -217,13 +215,13 @@ def top(self):
             child_index = self._highest_priority_child_index(current_index)
             if child_index is None:
                 break
-            if self._has_lower_priority(???????, self._elements[child_index]):
+            if self._has_lower_priority(element, self._elements[child_index]):
                 self._elements[current_index] = self._elements[child_index]
-                current_index = child_index
+                current_index = ch???_index
             else:
                 break
 
-        self._elements[current_index] = ???????
+        self._elements[current_index] = element
 ```
 
 # Implement Heap Top Helper (_highest_priority_child_index)
@@ -259,11 +257,11 @@ Takes O(n) comparison and assignments
 def _heapify(self, elements):
     self._elements = elements[:]
     last_inner_node_index = self._first_leaf_index() - 1
-    for index in range(last_inner_node_index, ??, ??):
+    for index in range(last_inner_node_index, -1, ??):
         self._push_down(index)
 
 def _first_leaf_index(self):
-    return len(self) // ?
+    return len(self) // 2
 ```
 Assume i is the index of last internal node ⮕ 2i + 1 < n ⮕ 2i + 1 <= n - 1 ⮕ 2i <= n -2 ⮕ i <= n/2 -1
 The 1st leaf node is i + 1 ⮕ n/2 ⮕ considering one-child and two-child cases, we use n//2 
@@ -278,7 +276,6 @@ Iterate through all elements:
 
 # Implement 'Find the k Largest Entries'
 ```python
-"""Module providing an implementation for stack, using singly-linked lists to store the elements."""
 import sys
 
 sys.path.append(
