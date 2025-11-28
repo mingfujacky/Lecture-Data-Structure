@@ -140,7 +140,7 @@ class Heap:
         return self._priority(element_1) < self._priority(element_2)
     
     def _has_higher_priority(self, element_1, element_2):
-        return self._priority(element_1) 。 self._priority(element_2)
+        return self._priority(element_1) > self._priority(element_2)
     
     def _left_child_index(self, index):
         return index * ? + 1
@@ -172,11 +172,13 @@ def _bubble_up(self, index):
         parent_index = self._parent_index(index)
         parent = self._elements[parent_index]
         if self._has_higher_priority(el?????, parent):
-        # There is a violation of the heap’s property, nad we need to swap the new element with its parent
+        # There is a violation of the heap’s property, 
+        # and we need to swap the new element with its parent
             self._elements[index] = parent
             index = parent_?????
         else:
-        # The new element and its parent don’t violate the heap’s properties, so we have found the final place to insert the new element.    
+        # The new element and its parent don’t violate the heap’s properties,
+        #  so we have found the final place to insert the new element.    
             break
     self._elements[index] = element    
 ```
