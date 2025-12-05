@@ -95,6 +95,12 @@ style: |
   - (10%) Final report oral presentation @ 12/12
   - (10%) Submit final written report @ 12/26 (don't be late)
 
+# 期中期末考試規定
+- 請根據助教指示安排進入考場入座，不得攜帶書本及參考資料
+- 考試期間不得使用手機或其他的具通訊功能的設備，請將此種設備放置在監考人員的可視範圍內，如桌上或教室前面
+- 攜帶學生證或其他可以確認身份的證件
+- 考試時間為六十分鐘  
+
 # Final Report
 - Recommend TOC
   - What problem you plan to solve

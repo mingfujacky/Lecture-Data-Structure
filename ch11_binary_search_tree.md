@@ -73,7 +73,6 @@ style: |
 Binary trees are defined by restricting each node to a maximum of two children.
 - In a binary tree, a node may have zero, one, or two child links. 
 - There are left children and right children of a node, and thus its left and right subtrees
-- The order of the children, however, isn’t always important for all binary trees.
  
 <div class="middle-grid">
     <img src="files/image/tree_binary_ternary.png">
@@ -95,7 +94,7 @@ In BST, for any node N that stores a value v, all nodes in the left subtree of N
     <img src="files/image/tree_bst_order.png">
 </div>
 
-# Design to Find the Minimum and Maximum Elements in a Tree
+# Design to Find the Minimum and Maximum Elements in a BST
 - Get the maximum element, we start at the root and follow the links to the right children until we reach a node that has no right child. This node (which could be the root itself) stores the maximum value in the tree.
 - Get the minimum element, we start at the root and follow the links to the left children until we reach a node that has no left child.
 <div class="middle-grid">
@@ -110,20 +109,18 @@ class Node:
         self._left = left
         self._right = right
 
-    def __str__(self):
-        left_str = str(self._left)
-        right_str = str(self._right)
-        return f"{self._value} ({left_str})({right_str})"
-
     def value(self):
         return self._value
+    
     def left(self):
         return self._left
+    
     def right(self):
         return self._right
 
     def set_left(self, node):
         self._left = node
+    
     def set_right(self, node):
         self._right = node
 
@@ -156,24 +153,6 @@ class Node:
 class BinarySearchTree:
     def __init__(self):
         self._root = None
-    def __repr__(self):
-        return f'BinarySearchTree({str(self)})'
-    def __str__(self):
-        return str(self._root)
-
-    def __len__(self) -> bool:
-        """Return the number of values stored in the tree."""
-        # This version of the traversal algorithm uses an explicit stack, instead of recursion.
-        stack = Stack()
-        stack.push(self._root)
-        size = 0
-        while len(stack) > 0:
-            node = stack.pop()
-            if node is not None:
-                size += 1
-                stack.push(node.right())
-                stack.push(node.left())
-        return size
 ```
 
 # Design BST Search
@@ -186,26 +165,24 @@ The search method follows a single path, from the root to (possibly) a leaf, mea
 # Implement BST Search
 ```python
 def _search(self, value):
-        """Returns a tuple. 
-           The first element is the node containing the target value, or None if not found.
-           The second element is the parent of the node in the first position. 
-           If the target wasn't found or if it was the root, the parent is set to None.
-        """
-        parent = None
-        node = self._root
-        while node is not None:
-            node_val = node.value()
-            if node_val == value:
-                return node, parent
-            elif value < node_val:
-                parent = node
-                node = node.left()
-            else:
-                parent = node
-                node = node.right()
-        return None, None
-    def contains(self, value):
-        return self._search(value)[0] is not None
+    """Returns a tuple. 
+       The first element is the node containing the target value, or None if not found.
+       The second element is the parent of the node in the first position. 
+       If the target wasn't found or if it was the root, the parent is set to None.
+    """
+    parent = None
+    node = self._root
+    while node is not None:
+        node_val = node.value()
+        if node_val == value:
+            return node, parent
+        elif value < node_val:
+            parent = node
+            node = node.left()
+        else:
+            parent = node
+            node = node.right()
+    return None, None
 ```
 
 # Design BST Insert

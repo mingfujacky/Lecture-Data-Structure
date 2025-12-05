@@ -67,6 +67,7 @@ if __name__ == "__main__":
     node5.set_left(node2)
     node5.set_right(node8)
     print(node10)
+    print(repr(node10))
     min_node, min_parent = node10.find_min_in_subtree()
     print("min_node:", min_node)
     max_node, max_parent = node10.find_max_in_subtree()
